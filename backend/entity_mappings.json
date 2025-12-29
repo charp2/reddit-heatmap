@@ -1,0 +1,262 @@
+{
+  "TSLA": {
+    "names": ["tesla", "tesla motors", "tesla inc"],
+    "people": ["elon", "elon musk", "musk"],
+    "products": ["cybertruck", "model 3", "model y", "model s", "model x", "fsd", "autopilot", "powerwall", "megapack", "supercharger"]
+  },
+  "AAPL": {
+    "names": ["apple", "apple inc"],
+    "people": ["tim cook", "cook"],
+    "products": ["iphone", "ipad", "macbook", "imac", "airpods", "apple watch", "vision pro", "mac pro", "mac mini", "apple tv"]
+  },
+  "MSFT": {
+    "names": ["microsoft"],
+    "people": ["satya nadella", "nadella", "satya", "bill gates", "gates"],
+    "products": ["windows", "xbox", "azure", "office", "teams", "copilot", "bing", "surface", "linkedin", "github"]
+  },
+  "GOOGL": {
+    "names": ["google", "alphabet"],
+    "people": ["sundar pichai", "pichai", "sundar"],
+    "products": ["chrome", "android", "youtube", "gmail", "google maps", "pixel", "waymo", "bard", "gemini", "google cloud"]
+  },
+  "AMZN": {
+    "names": ["amazon"],
+    "people": ["andy jassy", "jassy", "jeff bezos", "bezos"],
+    "products": ["aws", "prime", "alexa", "echo", "kindle", "ring", "whole foods", "twitch", "prime video"]
+  },
+  "NVDA": {
+    "names": ["nvidia"],
+    "people": ["jensen huang", "jensen", "huang"],
+    "products": ["rtx", "cuda", "geforce", "h100", "a100", "dgx", "drive", "omniverse", "tensorrt", "jetson"]
+  },
+  "META": {
+    "names": ["meta", "facebook", "fb"],
+    "people": ["mark zuckerberg", "zuckerberg", "zuck"],
+    "products": ["instagram", "whatsapp", "messenger", "oculus", "quest", "threads", "reels", "metaverse", "horizon"]
+  },
+  "GME": {
+    "names": ["gamestop", "game stop"],
+    "people": ["ryan cohen", "cohen", "dfv", "roaring kitty", "keith gill", "deep fucking value"],
+    "products": []
+  },
+  "AMC": {
+    "names": ["amc", "amc entertainment", "amc theatres"],
+    "people": ["adam aron", "aron", "aa"],
+    "products": ["amc+", "ape"]
+  },
+  "PLTR": {
+    "names": ["palantir"],
+    "people": ["alex karp", "karp", "peter thiel", "thiel"],
+    "products": ["gotham", "foundry", "aip", "apollo"]
+  },
+  "AMD": {
+    "names": ["amd", "advanced micro devices"],
+    "people": ["lisa su", "lisa", "su"],
+    "products": ["ryzen", "epyc", "radeon", "instinct", "threadripper", "rdna", "zen"]
+  },
+  "INTC": {
+    "names": ["intel"],
+    "people": ["pat gelsinger", "gelsinger"],
+    "products": ["core", "xeon", "arc", "gaudi", "meteor lake", "raptor lake"]
+  },
+  "NFLX": {
+    "names": ["netflix"],
+    "people": ["ted sarandos", "sarandos", "reed hastings", "hastings"],
+    "products": []
+  },
+  "DIS": {
+    "names": ["disney", "walt disney"],
+    "people": ["bob iger", "iger"],
+    "products": ["disney+", "disney plus", "espn", "hulu", "marvel", "star wars", "pixar"]
+  },
+  "COIN": {
+    "names": ["coinbase"],
+    "people": ["brian armstrong", "armstrong"],
+    "products": ["coinbase wallet", "base"]
+  },
+  "HOOD": {
+    "names": ["robinhood"],
+    "people": ["vlad tenev", "tenev", "vlad"],
+    "products": []
+  },
+  "SOFI": {
+    "names": ["sofi", "social finance"],
+    "people": ["anthony noto", "noto"],
+    "products": ["sofi bank", "sofi stadium"]
+  },
+  "NIO": {
+    "names": ["nio"],
+    "people": ["william li", "li bin"],
+    "products": ["et5", "et7", "es6", "es8", "ec6", "ec7"]
+  },
+  "RIVN": {
+    "names": ["rivian"],
+    "people": ["rj scaringe", "scaringe"],
+    "products": ["r1t", "r1s", "edv"]
+  },
+  "LCID": {
+    "names": ["lucid", "lucid motors"],
+    "people": ["peter rawlinson", "rawlinson"],
+    "products": ["lucid air", "gravity"]
+  },
+  "BA": {
+    "names": ["boeing"],
+    "people": ["dave calhoun", "calhoun"],
+    "products": ["737 max", "787", "777", "747", "dreamliner"]
+  },
+  "BABA": {
+    "names": ["alibaba"],
+    "people": ["jack ma", "ma", "daniel zhang"],
+    "products": ["alipay", "taobao", "tmall", "alicloud"]
+  },
+  "CRM": {
+    "names": ["salesforce"],
+    "people": ["marc benioff", "benioff"],
+    "products": ["slack", "tableau", "mulesoft"]
+  },
+  "ORCL": {
+    "names": ["oracle"],
+    "people": ["larry ellison", "ellison", "safra catz", "catz"],
+    "products": ["oracle cloud", "java", "mysql", "netsuite"]
+  },
+  "SQ": {
+    "names": ["square", "block inc", "block"],
+    "people": ["jack dorsey", "dorsey"],
+    "products": ["cash app", "afterpay", "tidal"]
+  },
+  "PYPL": {
+    "names": ["paypal"],
+    "people": ["dan schulman", "schulman", "alex chriss"],
+    "products": ["venmo", "braintree", "xoom"]
+  },
+  "SHOP": {
+    "names": ["shopify"],
+    "people": ["tobi lutke", "lutke", "tobi"],
+    "products": []
+  },
+  "SNOW": {
+    "names": ["snowflake"],
+    "people": ["frank slootman", "slootman", "sridhar ramaswamy"],
+    "products": []
+  },
+  "UBER": {
+    "names": ["uber"],
+    "people": ["dara khosrowshahi", "dara"],
+    "products": ["uber eats", "uber freight"]
+  },
+  "LYFT": {
+    "names": ["lyft"],
+    "people": ["david risher", "risher"],
+    "products": []
+  },
+  "DASH": {
+    "names": ["doordash", "door dash"],
+    "people": ["tony xu", "xu"],
+    "products": ["dashpass", "wolt"]
+  },
+  "ABNB": {
+    "names": ["airbnb"],
+    "people": ["brian chesky", "chesky"],
+    "products": []
+  },
+  "ZM": {
+    "names": ["zoom"],
+    "people": ["eric yuan", "yuan"],
+    "products": ["zoom phone", "zoom rooms"]
+  },
+  "CRWD": {
+    "names": ["crowdstrike"],
+    "people": ["george kurtz", "kurtz"],
+    "products": ["falcon"]
+  },
+  "PANW": {
+    "names": ["palo alto networks", "palo alto"],
+    "people": ["nikesh arora", "arora"],
+    "products": ["prisma", "cortex", "xdr"]
+  },
+  "SPOT": {
+    "names": ["spotify"],
+    "people": ["daniel ek", "ek"],
+    "products": []
+  },
+  "SNAP": {
+    "names": ["snapchat", "snap inc"],
+    "people": ["evan spiegel", "spiegel"],
+    "products": ["snapchat+", "spectacles"]
+  },
+  "RBLX": {
+    "names": ["roblox"],
+    "people": ["david baszucki", "baszucki"],
+    "products": ["robux"]
+  },
+  "U": {
+    "names": ["unity"],
+    "people": ["john riccitiello", "riccitiello", "jim whitehurst"],
+    "products": []
+  },
+  "MRNA": {
+    "names": ["moderna"],
+    "people": ["stephane bancel", "bancel"],
+    "products": ["spikevax"]
+  },
+  "PFE": {
+    "names": ["pfizer"],
+    "people": ["albert bourla", "bourla"],
+    "products": ["comirnaty", "paxlovid"]
+  },
+  "JPM": {
+    "names": ["jpmorgan", "jp morgan", "chase"],
+    "people": ["jamie dimon", "dimon"],
+    "products": []
+  },
+  "GS": {
+    "names": ["goldman", "goldman sachs"],
+    "people": ["david solomon", "solomon"],
+    "products": ["marcus"]
+  },
+  "BAC": {
+    "names": ["bank of america", "bofa"],
+    "people": ["brian moynihan", "moynihan"],
+    "products": ["merrill"]
+  },
+  "WFC": {
+    "names": ["wells fargo", "wells"],
+    "people": ["charlie scharf", "scharf"],
+    "products": []
+  },
+  "V": {
+    "names": ["visa"],
+    "people": ["ryan mcinerney", "mcinerney"],
+    "products": []
+  },
+  "MA": {
+    "names": ["mastercard"],
+    "people": ["michael miebach", "miebach"],
+    "products": []
+  },
+  "WMT": {
+    "names": ["walmart", "wal-mart"],
+    "people": ["doug mcmillon", "mcmillon"],
+    "products": ["walmart+", "sam's club"]
+  },
+  "TGT": {
+    "names": ["target"],
+    "people": ["brian cornell", "cornell"],
+    "products": []
+  },
+  "COST": {
+    "names": ["costco"],
+    "people": ["craig jelinek", "jelinek", "ron vachris"],
+    "products": ["kirkland"]
+  },
+  "XOM": {
+    "names": ["exxon", "exxonmobil"],
+    "people": ["darren woods", "woods"],
+    "products": ["mobil"]
+  },
+  "CVX": {
+    "names": ["chevron"],
+    "people": ["mike wirth", "wirth"],
+    "products": ["texaco"]
+  }
+}

@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 237, 237, 237;
+  --background-rgb: 10, 10, 10;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #525252;
+}
+
+/* Treemap styles */
+.treemap-tile {
+  transition: all 0.2s ease-out;
+}
+
+.treemap-tile:hover {
+  filter: brightness(1.2);
+}
+
+/* Live feed animation */
+.feed-item {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Pulse animation for live indicator */
+.pulse-dot {
+  animation: pulse-dot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Hype bar animation */
+.hype-bar {
+  transition: width 0.5s ease-out;
+}
+
+/* Sentiment color utilities */
+.sentiment-bullish {
+  color: #22c55e;
+}
+
+.sentiment-bearish {
+  color: #ef4444;
+}
+
+.sentiment-neutral {
+  color: #737373;
+}
+
+/* Demo mode banner */
+.demo-banner {
+  background: linear-gradient(90deg, #f59e0b 0%, #d97706 100%);
+}
