@@ -7,24 +7,10 @@ import asyncio
 import random
 from datetime import datetime
 from typing import AsyncGenerator, Callable, Optional
-from dataclasses import dataclass
 
+from models import RedditMention
 from ticker_extractor import extract_tickers
 from sentiment import analyze_sentiment
-
-
-@dataclass
-class RedditMention:
-    """Represents a stock mention from Reddit."""
-    ticker: str
-    source: str
-    content_type: str
-    content: str
-    sentiment: float
-    author: str
-    permalink: str
-    created_at: datetime
-    score: int = 0  # Reddit score (upvotes - downvotes)
 
 
 # Weighted ticker list (more popular = higher weight)

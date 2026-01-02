@@ -7,26 +7,13 @@ import os
 import asyncio
 from datetime import datetime
 from typing import AsyncGenerator, Optional
-from dataclasses import dataclass
 
 import praw
 from praw.models import Submission, Comment
 
+from models import RedditMention
 from ticker_extractor import extract_tickers
 from sentiment import analyze_sentiment
-
-
-@dataclass
-class RedditMention:
-    """Represents a stock mention from Reddit."""
-    ticker: str
-    source: str  # subreddit
-    content_type: str  # 'post' or 'comment'
-    content: str
-    sentiment: float
-    author: str
-    permalink: str
-    created_at: datetime
 
 
 # Default subreddits to monitor
@@ -113,6 +100,7 @@ async def stream_submissions(
                 author=str(submission.author) if submission.author else "[deleted]",
                 permalink=f"https://reddit.com{submission.permalink}",
                 created_at=datetime.fromtimestamp(submission.created_utc),
+                score=submission.score,
             )
 
             if on_mention:
@@ -167,6 +155,7 @@ async def stream_comments(
                 author=str(comment.author) if comment.author else "[deleted]",
                 permalink=f"https://reddit.com{comment.permalink}",
                 created_at=datetime.fromtimestamp(comment.created_utc),
+                score=comment.score,
             )
 
             if on_mention:
@@ -229,6 +218,7 @@ async def poll_new_posts(
                     author=str(submission.author) if submission.author else "[deleted]",
                     permalink=f"https://reddit.com{submission.permalink}",
                     created_at=datetime.fromtimestamp(submission.created_utc),
+                    score=submission.score,
                 ))
 
     return mentions

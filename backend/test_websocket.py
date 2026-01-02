@@ -15,7 +15,7 @@ from datetime import datetime
 
 # Import the module to access its globals directly
 import main
-from mock_stream import RedditMention
+from models import RedditMention
 from hype_calculator import HypeCalculator
 
 

@@ -17,8 +17,9 @@ from dotenv import load_dotenv
 
 from database import init_db, add_mention, get_recent_mentions, get_ticker_stats
 from hype_calculator import HypeCalculator
+from models import RedditMention
 from reddit_stream import has_reddit_credentials
-from mock_stream import stream_mock_mentions, RedditMention
+from mock_stream import stream_mock_mentions
 
 # Load environment variables
 load_dotenv()
