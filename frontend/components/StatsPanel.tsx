@@ -38,42 +38,30 @@ export function StatsPanel({ stats, topTickers }: StatsPanelProps) {
 
   return (
     <div className="space-y-4">
-      {/* Quick Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+      {/* Quick Stats - simplified for zero-start mode */}
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
         <StatCard
           label="Total Mentions"
           value={stats?.total_mentions || 0}
-          subValue="all time"
-        />
-        <StatCard
-          label="Last 5 Min"
-          value={stats?.mentions_last_5min || 0}
-          subValue={`${stats?.velocity?.toFixed(1) || 0}/min`}
         />
         <StatCard
           label="Unique Tickers"
           value={stats?.unique_tickers || 0}
-          subValue="tracked"
         />
         <StatCard
-          label="Last Hour"
-          value={stats?.mentions_last_hour || 0}
-          subValue="mentions"
+          label="Velocity"
+          value={`${stats?.velocity?.toFixed(1) || 0}/min`}
         />
       </div>
 
       {/* Top Trending */}
-      <div className="bg-card border border-border rounded-lg p-4">
-        <h3 className="text-sm font-medium text-gray-400 uppercase tracking-wide mb-3">
-          Top Trending
-        </h3>
-        <div className="space-y-2">
-          {top5.length === 0 ? (
-            <div className="text-gray-500 text-sm py-4 text-center">
-              No data yet...
-            </div>
-          ) : (
-            top5.map((ticker, index) => (
+      {top5.length > 0 && (
+        <div className="bg-card border border-border rounded-lg p-4">
+          <h3 className="text-sm font-medium text-gray-400 uppercase tracking-wide mb-3">
+            Top Trending
+          </h3>
+          <div className="space-y-2">
+            {top5.map((ticker, index) => (
               <div
                 key={ticker.ticker}
                 className="flex items-center justify-between py-2 border-b border-border last:border-0"
@@ -122,10 +110,10 @@ export function StatsPanel({ stats, topTickers }: StatsPanelProps) {
                   </div>
                 </div>
               </div>
-            ))
-          )}
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

@@ -14,6 +14,7 @@ export interface LatestMention {
   author: string;
   content_type: "post" | "comment";
   timestamp: string;
+  score: number;
 }
 
 export interface Stats {

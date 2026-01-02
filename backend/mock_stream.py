@@ -24,6 +24,7 @@ class RedditMention:
     author: str
     permalink: str
     created_at: datetime
+    score: int = 0  # Reddit score (upvotes - downvotes)
 
 
 # Weighted ticker list (more popular = higher weight)
@@ -211,6 +212,12 @@ async def stream_mock_mentions(
         # Decide if post or comment
         content_type = "post" if random.random() < 0.3 else "comment"
 
+        # Generate realistic Reddit score (posts typically have higher scores)
+        if content_type == "post":
+            score = random.randint(1, 5000)
+        else:
+            score = random.randint(1, 500)
+
         mention = RedditMention(
             ticker=ticker,
             source=random.choice(SUBREDDITS),
@@ -220,6 +227,7 @@ async def stream_mock_mentions(
             author=random.choice(USERNAMES),
             permalink=f"https://reddit.com/r/wallstreetbets/comments/mock{post_id}",
             created_at=datetime.now(),
+            score=score,
         )
 
         post_id += 1
@@ -250,16 +258,19 @@ async def generate_initial_data(count: int = 50) -> list[RedditMention]:
     for _ in range(count):
         ticker, content, _ = generate_mock_post()
         sentiment_result = analyze_sentiment(content)
+        content_type = "post" if random.random() < 0.3 else "comment"
+        score = random.randint(1, 5000) if content_type == "post" else random.randint(1, 500)
 
         mention = RedditMention(
             ticker=ticker,
             source=random.choice(SUBREDDITS),
-            content_type="post" if random.random() < 0.3 else "comment",
+            content_type=content_type,
             content=content,
             sentiment=sentiment_result["compound"],
             author=random.choice(USERNAMES),
             permalink=f"https://reddit.com/r/wallstreetbets/comments/init{post_id}",
             created_at=datetime.now(),
+            score=score,
         )
 
         mentions.append(mention)
